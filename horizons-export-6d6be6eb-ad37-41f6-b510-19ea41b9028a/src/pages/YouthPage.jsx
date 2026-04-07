@@ -8,7 +8,6 @@ const YouthPage = () => {
       <Helmet>
         <title>Youth Programs | Jamatia Islamic Centre</title>
         <meta name="description" content="Join our youth programs and activities at Jamatia Islamic Centre. Engage with the community through educational, spiritual, and recreational programs designed for young Muslims." />
-        <script type="text/javascript" src="https://form.jotform.com/jsform/260881828700360" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
