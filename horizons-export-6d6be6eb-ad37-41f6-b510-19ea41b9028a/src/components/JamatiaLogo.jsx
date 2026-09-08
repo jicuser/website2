@@ -1,23 +1,15 @@
 import React from 'react';
 
-const JamatiaLogo = ({ className }) => {
+const JamatiaLogo = ({ className = '' }) => {
   return (
-    <div className={`flex items-center ${className}`}>
-      <span className="text-primary text-6xl md:text-7xl font-bold font-serif mr-1 md:mr-2 shrink-0 self-end leading-none pb-0.5">
-        J
-      </span>
-      <div className="flex flex-col justify-center">
-        <div className="inline-block"> 
-          <span className="text-primary text-3xl md:text-4xl font-semibold font-serif leading-tight">
-            amatia
-          </span>
+    <div className={`flex items-end ${className}`}>
+      <div className="leading-none">
+        <div className="font-serif text-[3.25rem] font-semibold italic leading-[.72] tracking-[-.055em] text-[#efc766] md:text-[3.7rem]">
+          Jamatia
         </div>
-        <span 
-          className="text-gray-900 dark:text-gray-200 text-xs md:text-sm font-medium leading-tight block text-center whitespace-nowrap"
-          style={{ letterSpacing: '0.1em' }} 
-        >
-          ISLAMIC CENTRE
-        </span>
+        <div className="mt-2 whitespace-nowrap pl-1 text-[8px] font-semibold uppercase tracking-[.31em] text-white/70 md:text-[9px]">
+          Jamatia Islamic Centre
+        </div>
       </div>
     </div>
   );
