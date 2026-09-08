@@ -32,7 +32,7 @@ import React from 'react';
                     transition={{ duration: 0.5 }}
                   >
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-                      Welcome to <span className="text-primary">Jamatia Islamic Centre</span>
+                      <span className="text-primary">Jamatia Islamic Centre</span>
                     </h1>
                     <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
                       A place of worship, learning, and community service dedicated to spreading the message of peace and harmony.
