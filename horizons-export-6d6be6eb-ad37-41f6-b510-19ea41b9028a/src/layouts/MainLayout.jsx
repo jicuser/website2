@@ -10,25 +10,21 @@ const MainLayout = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col bg-[#06101c]">
       <Navbar isScrolled={isScrolled} />
-      {/* The padding-top for main is now handled globally in index.css to account for dynamic navbar height */}
-      <main className="flex-grow"> 
+      <main className="flex-grow !pt-[184px] lg:!pt-[140px]">
         <motion.div
           key={pathname}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3 }}
+          exit={{ opacity: 0, y: -12 }}
+          transition={{ duration: 0.25 }}
         >
           <Outlet />
         </motion.div>
